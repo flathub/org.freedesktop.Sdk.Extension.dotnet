@@ -10,4 +10,5 @@
       This SDK extension allows you to build and run .NET Core apps.
     </p>
   </description>
+  <url type="homepage">https://dotnet.microsoft.com/</url>
 </component>
