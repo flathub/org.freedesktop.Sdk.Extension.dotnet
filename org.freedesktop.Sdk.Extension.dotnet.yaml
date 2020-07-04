@@ -36,16 +36,16 @@ modules:
     sources:
       - type: archive
         only-arches: [x86_64]
-        url: https://download.visualstudio.microsoft.com/download/pr/57e63f03-ebdf-4c22-96ff-2b85dc70cf7f/988576869e82a80f4a97ca5a733a5295/dotnet-sdk-3.1.102-linux-x64.tar.gz
-        sha512: 9cacdc9700468a915e6fa51a3e5539b3519dd35b13e7f9d6c4dd0077e298baac0e50ad1880181df6781ef1dc64a232e9f78ad8e4494022987d12812c4ca15f29
+        url: https://download.visualstudio.microsoft.com/download/pr/37268c18-226d-436b-b13c-4b77b7f42140/17e8a85360206006a557d634d16713cd/dotnet-sdk-3.1.105-linux-x64.tar.gz
+        sha512: 4c15208c6edde102c447cbe20abb3189ae9ab530118297994a523b3ef4bababffe74830d0803fd8afcae3cd6bccf1a8f02c42c3bee19bf6ccd6d7cf8d25c68f4
       - type: archive
         only-arches: [arm]
-        url: https://download.visualstudio.microsoft.com/download/pr/349f13f0-400e-476c-ba10-fe284b35b932/44a5863469051c5cf103129f1423ddb8/dotnet-sdk-3.1.102-linux-arm.tar.gz
-        sha512: b279185fd245c3a254f4bbdd4f743d4309fcf8e2d3a1eb42df2f464e40df9954257209a666287ad3d924f863ca09d0cd8638d394da9f990477a2fc6d71198550
+        url: https://download.visualstudio.microsoft.com/download/pr/52f61afc-0897-4bc7-abf4-f936f9c6f637/8fca0abb8c378a32d966c1b762524c0d/dotnet-sdk-3.1.105-linux-arm.tar.gz
+        sha512: a5e7531445c5efc5d647a6dca3725bc13b92df19aa87b63163b01518de5eb29e22f02c124807f29edc5f07ab31c56b675a6c34a1eae50e090c4ddf930fb4bd9f
       - type: archive
         only-arches: [aarch64]
-        url: https://download.visualstudio.microsoft.com/download/pr/2ea7ea69-6110-4c39-a07c-bd4df663e49b/5d60f17a167a5696e63904f7a586d072/dotnet-sdk-3.1.102-linux-arm64.tar.gz
-        sha512: 7ad682935158599aeff1f04228df65ce99aa7d34fbe096422a55d6b0c6b38a7de4b9d0af1b667f63728b051d355f0c69526ffa90bb4c4d8ded53fb4ba63233c9
+        url: https://download.visualstudio.microsoft.com/download/pr/a2de5fc2-1c17-4ea2-bf3f-77c404e9263e/f9c79b6067afc819656ba9f6e6a4ed73/dotnet-sdk-3.1.105-linux-arm64.tar.gz
+        sha512: 10c13928f8f3b4a7bd0c782d3579e417b526f3497cb59deeef4ae9e7fae3228df2ecddfeb1c66f9c2d329204a62fa0c4bb759e2954a0e26ac00419b3efd6017e
 
   - name: scripts
     buildsystem: simple
@@ -74,6 +74,7 @@ modules:
           - 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/sdk/dotnet/lib'
           - 'export DOTNET_CLI_TELEMETRY_OPTOUT=true'
           - 'export DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true'
+          - 'export DOTNET_ROOT=/usr/lib/sdk/dotnet/lib'
         dest-filename: enable.sh
       - type: file
         path: org.freedesktop.Sdk.Extension.dotnet.appdata.xml
