@@ -10,6 +10,7 @@ modules:
   - name: libunwind
     rm-configure: true
     build-options:
+      cflags: -fcommon
       prefix: /usr/lib/sdk/dotnet
     cleanup:
       - '/include'
