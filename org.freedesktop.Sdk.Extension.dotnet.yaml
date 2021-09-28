@@ -37,16 +37,16 @@ modules:
     sources:
       - type: archive
         only-arches: [x86_64]
-        url: https://download.visualstudio.microsoft.com/download/pr/c1a30ceb-adc2-4244-b24a-06ca29bb1ee9/6df5d856ff1b3e910d283f89690b7cae/dotnet-sdk-3.1.302-linux-x64.tar.gz
-        sha512: a270c150d53eafbb67d294aecd27584b517077b6555d93d1dd933f4209affdda58cae112a50b3a56eeef63e635b5c5d1933f4852a92e760282c7619d2454edbe
+        url: https://download.visualstudio.microsoft.com/download/pr/70d12135-d65f-4f4c-9d96-a6ac0251fb1b/57856b7654e338027cfb53552b2c4d46/dotnet-sdk-3.1.413-linux-x64.tar.gz
+        sha512: 2a0824f11aba0b79d3f9a36af0395649bc9b4137e61b240a48dccb671df0a5b8c2086054f8e495430b7ed6c344bb3f27ac3dfda5967d863718a6dadeca951a83
       - type: archive
         only-arches: [arm]
-        url: https://download.visualstudio.microsoft.com/download/pr/56691c4c-341a-4bca-9869-409803d23cf8/d872d7a0c27a6c5e9b812e889de89956/dotnet-sdk-3.1.302-linux-arm.tar.gz
-        sha512: eccb9ba89eb745282cb749e505fcf2209e3b56f41d5ddbb383dbeae04eb58a9b367560d743bc78600c8adab4abb93bbabccaae33613b9d3fec2b150fca5dffc4
+        url: https://download.visualstudio.microsoft.com/download/pr/40edd52f-b1ca-4f0c-8d50-34433202ce9d/2b8f5b881c239a706f271f010e56159c/dotnet-sdk-3.1.413-linux-arm.tar.gz
+        sha512: 31f395b1e48e9ba53d4dc63db7ff1ea38bdcb612a1d54b483cde22a009c48fbae0303779f42cee32db0e51bd953c8abfdaa1620a43a7fd84e1f8e937b6675d59
       - type: archive
         only-arches: [aarch64]
-        url: https://download.visualstudio.microsoft.com/download/pr/5ee48114-19bf-4a28-89b6-37cab15ec3f2/f5d1f54ca93ceb8be7d8e37029c8e0f2/dotnet-sdk-3.1.302-linux-arm64.tar.gz
-        sha512: c2bebb673f217d9e7afb80b2b032c6f850d93e2419b5c0f9aa22676114a5c4fa91550a89b46757012fb9535405c1bb7902f0927f093769d4d055a8de84cfc5d8
+        url: https://download.visualstudio.microsoft.com/download/pr/dfd0ad22-3e47-432f-9aa1-f65b11a2ced2/d096c5d1561732c1658543fa8fb7a31f/dotnet-sdk-3.1.413-linux-arm64.tar.gz
+        sha512: 39f198f07577faf81f09ca621fb749d5aac38fc05e7e6bd6226009679abc7d001454068430ddb34b320901955f42de3951e2707e01bce825b5216df2bc0c8eca
 
   - name: scripts
     buildsystem: simple
